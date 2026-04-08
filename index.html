@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISTSHOP - Гемы Brawl Stars</title>
+    
+    <link rel="canonical" href="https://bobki2926-design.github.io/mistshopsite/">
+
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
         body {
@@ -78,7 +81,7 @@
         </div>
         <div style="display: flex; align-items: center;">
             <span class="price">199₽</span>
-            <button class="buy-btn" onclick="sendToBot('30 Гемов')">Купить</button>
+            <button class="buy-btn" onclick="sendData('30 Гемов')">Купить</button>
         </div>
     </div>
 
@@ -89,20 +92,18 @@
         </div>
         <div style="display: flex; align-items: center;">
             <span class="price">990₽</span>
-            <button class="buy-btn" onclick="sendToBot('170 Гемов')">Купить</button>
+            <button class="buy-btn" onclick="sendData('170 Гемов')">Купить</button>
         </div>
     </div>
 
     <div class="item-card">
-        <div class="header-pass">
-             <div class="item-info">
-                <span class="item-name">Brawl Pass</span>
-                <span class="item-sub">Plus Сезон</span>
-            </div>
+        <div class="item-info">
+            <span class="item-name">Brawl Pass</span>
+            <span class="item-sub">Plus Сезон</span>
         </div>
         <div style="display: flex; align-items: center;">
             <span class="price">650₽</span>
-            <button class="buy-btn" onclick="sendToBot('Brawl Pass')">Купить</button>
+            <button class="buy-btn" onclick="sendData('Brawl Pass')">Купить</button>
         </div>
     </div>
 
@@ -111,7 +112,7 @@
         webapp.expand();
         webapp.ready();
 
-        function sendToBot(item) {
+        function sendData(item) {
             webapp.sendData(item);
         }
     </script>
